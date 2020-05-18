@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend: 
+    build: ./frontend
+    ports: 
+      - "8080:8080"
+    volumes:
+      - ./frontend:/app
+
+    command: npm start
+
+  api: 
+    build: ./externalApi
+    ports: 
+      - "5000:5000"
+    volumes:
+      - ./externalApi:/app
+  
+    command: npm start

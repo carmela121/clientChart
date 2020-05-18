@@ -1,0 +1,19 @@
+.header {
+  padding: 60px;
+  background: #fff;
+  box-shadow: 0 4px 3px -3px black;
+  text-align: left;
+}
+
+.logo {
+ position: absolute;
+ top: 30px;
+ width: 40px;
+ right: 40px;
+}
+
+.logo-text{
+  position: absolute;
+  top: 45px;
+  height: 2.5em;
+}
