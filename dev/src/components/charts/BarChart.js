@@ -86,7 +86,7 @@ const Chart = (props) => {
 
   return (
 
-    <div>
+    <div className="chart-container" style={{ textAlign: "center" }}>
 
       {loading && <p>Chart loading...</p>}
       {error && <p>{error.message}</p>}

@@ -125,7 +125,7 @@ const ClientDataChart = (props) => {
 
   return (
 
-    <div style={{ width: "50%", textAlign: "center", padding: "40px" }}>
+    <div style={{ textAlign: "center", padding: "40px" }}>
       <h1>Client Adoption and Offboarding</h1>
       <div>
         <Select
@@ -155,23 +155,26 @@ const ClientDataChart = (props) => {
         </Select>
 
       </div>
+      <div style={{ width: "60%", margin: "auto" }}>
+        <HorizontalBar
 
-      <HorizontalBar
-        options={{
-          scales: {
-            xAxes: [{
-              ticks: {
-                beginAtZero: true
-              },
-              scaleLabel: {
-                display: true,
-                fontSize: 16,
-                labelString: Xlabel,
-              }
-            }]
-          }
-        }}
-        data={getData} />
+          options={{
+            scales: {
+              xAxes: [{
+                ticks: {
+                  beginAtZero: true
+                },
+                scaleLabel: {
+                  display: true,
+                  fontSize: 16,
+                  labelString: Xlabel,
+                }
+              }]
+            }
+          }}
+          data={getData} />
+      </div>
+
 
     </div>
   );
