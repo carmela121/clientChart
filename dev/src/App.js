@@ -9,10 +9,8 @@ import './themes.css'
 import './App.css';
 const useStyles = makeStyles((theme) => ({
   root: {
-
     flexGrow: 1,
     textAlign: 'center',
-
   }
 }));
 const App = () => {
