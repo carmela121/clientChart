@@ -7,7 +7,7 @@ const ClientDataChart = (props) => {
   const [Xlabel, setXLabel] = React.useState('Number of BRs')
   const getData = () => {
     if (props.activeQuery !== "2018/2019" && props.typeQuery === "BRData") {
-      setXLabel('Number of BRs')
+      setXLabel("Number of BRs")
       const { onboardedBRs, offboardedBRs } = props.data;
 
       const dataStructure = {

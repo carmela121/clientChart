@@ -12,7 +12,7 @@ const Chart = (props) => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:5000/client/${activeQuery}`)
+    fetch(`http://localhost:8080/client/${activeQuery}`)
       .then(res => res.json())
       .then(data => {
         setData(data);
@@ -28,7 +28,7 @@ const Chart = (props) => {
   }, [activeQuery]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/client")
+    fetch("http://localhost:8080/client")
       .then(res => res.json())
       .then(data => {
         setDataComparison(data);
