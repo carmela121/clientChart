@@ -18,7 +18,13 @@ const Chart = (props) => {
         setData(data);
         setLoading(false);
       })
-      .catch((error) => setError(error));
+
+      .catch((error) => {
+        if (activeQuery !== "2018/2019") {
+          setError(error)
+        }
+
+      });
   }, [activeQuery]);
 
   useEffect(() => {
@@ -36,7 +42,7 @@ const Chart = (props) => {
     <div>
 
       {loading && <p>Chart loading...</p>}
-      {/* {error && <p>{error.message}</p>} */}
+      {error && <p>{error.message}</p>}
 
       <ClientDataChart
         activeQuery={activeQuery}

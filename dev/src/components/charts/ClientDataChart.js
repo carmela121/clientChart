@@ -7,7 +7,7 @@ const ClientDataChart = (props) => {
   const [Xlabel, setXLabel] = React.useState('Number of BRs')
   const getData = () => {
     if (props.activeQuery !== "2018/2019" && props.typeQuery === "BRData") {
-
+      setXLabel('Number of BRs')
       const { onboardedBRs, offboardedBRs } = props.data;
 
       const dataStructure = {
@@ -31,7 +31,6 @@ const ClientDataChart = (props) => {
       return chartDataConfig
     }
     if (props.activeQuery !== "2018/2019" && props.typeQuery === "FileData") {
-      console.log('files')
       setXLabel("Number of Files")
 
       const { onboardedFiles, offboardedFiles } = props.data;
@@ -58,7 +57,7 @@ const ClientDataChart = (props) => {
       return chartDataConfig
     }
     if (props.activeQuery === "2018/2019" && props.typeQuery === "BRData") {
-
+      setXLabel("Number of BRs")
       const chartDataConfigComparison = {
         labels: [props.dataComparison[2].year, props.dataComparison[3].year],
         datasets: [
@@ -87,7 +86,7 @@ const ClientDataChart = (props) => {
       return chartDataConfigComparison
     }
     if (props.activeQuery === "2018/2019" && props.typeQuery === "FileData") {
-
+      setXLabel("Number of Files")
       const chartDataConfigComparison = {
         labels: [props.dataComparison[2].year, props.dataComparison[3].year],
         datasets: [
