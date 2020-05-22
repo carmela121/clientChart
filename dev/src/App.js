@@ -1,8 +1,10 @@
 import React from 'react';
-import Chart from './components/charts/BarChart';
+import Chart from './components/clientAdoption/BarChart';
 import logo from './logo.png';
 import brand from './deutsche-bank.png';
 import Header from './components/Header/Header';
+import HeatMap from './components/clientProcesses/HeatMap'
+import Dashboard from './components/dashboard/Dashboard'
 import { makeStyles } from '@material-ui/core/styles';
 
 import './themes.css'
@@ -28,7 +30,8 @@ const App = () => {
 
       <div className={prefersDark ? 'dark' : 'light'}>
         <Header logoImage={logo} textImage={brand} />
-        <Chart />
+        < Dashboard />
+
 
       </div >
 
