@@ -11,10 +11,7 @@ const Header = (props) => {
       {/* <img className="logo" src={props.logoImage} alt="logo"></img> */}
     </div>
   )
-
-
 }
-
 
 export default Header;
 

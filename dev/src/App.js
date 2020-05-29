@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from './logo.png';
-import brand from './deutsche-bank.png';
-import hsbc from './HSBC_Logo_2018.png'
-import Header from './components/Header/Header';
+import logo from './components/images/logo.png';
+import brand from './components/images/deutsche-bank.png';
+import hsbc from './components/images/HSBC_Logo_2018.png'
+import Header from './components/header/Header';
 import Dashboard from './components/dashboard/Dashboard'
 import { makeStyles } from '@material-ui/core/styles';
 
