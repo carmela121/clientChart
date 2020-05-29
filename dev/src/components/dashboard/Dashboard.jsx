@@ -1,9 +1,10 @@
 import React from "react";
-import { Tabs, Tab, Typography, Box } from '@material-ui/core';
+import { Tabs, Tab, Box } from '@material-ui/core';
 import PropTypes from 'prop-types';
-import dataProcess from '../clientProcesses/data'
-import Chart from '../clientAdoption/BarChart'
-import HeatMap from '../clientProcesses/HeatMap'
+import dataProcess from '../clientProcesses/data';
+import Chart from '../clientAdoption/BarChart';
+import ClientOffboarding from '../clientProcesses/ClientOffboarding';
+import AutomationRealTimeChart from '../automation/AutomationRealTime';
 import { makeStyles } from '@material-ui/core/styles';
 
 const TabPanel = (props) => {
@@ -57,6 +58,7 @@ const Dashboard = (props) => {
       <Tabs value={value} onChange={handleChange} indicatorColor="primary" centered>
         <Tab label="Adoption" />
         <Tab label="Processes" />
+        <Tab label="Result" />
 
       </Tabs>
 
@@ -64,7 +66,10 @@ const Dashboard = (props) => {
         <Chart />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <HeatMap />
+        <ClientOffboarding />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+        <AutomationRealTimeChart />
       </TabPanel>
 
     </div>

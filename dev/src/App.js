@@ -1,9 +1,8 @@
 import React from 'react';
-import Chart from './components/clientAdoption/BarChart';
 import logo from './logo.png';
 import brand from './deutsche-bank.png';
+import hsbc from './HSBC_Logo_2018.png'
 import Header from './components/Header/Header';
-import HeatMap from './components/clientProcesses/HeatMap'
 import Dashboard from './components/dashboard/Dashboard'
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -19,18 +18,18 @@ const App = () => {
   const classes = useStyles();
   const [prefersDark, setDark] = React.useState(false)
 
-  const handleClick = () => {
-    setDark(state => ({ prefersDark: !prefersDark }))
+  // const handleClick = () => {
+  //   setDark(state => ({ prefersDark: !prefersDark }))
 
-  }
-
+  // }
 
   return (
     <div className={classes.root}>
 
       <div className={prefersDark ? 'dark' : 'light'}>
-        <Header logoImage={logo} textImage={brand} />
-        < Dashboard />
+        {/* <Header logoImage={logo} textImage={brand} /> */}
+        <Header textImage={hsbc} />
+        <Dashboard />
 
 
       </div >
