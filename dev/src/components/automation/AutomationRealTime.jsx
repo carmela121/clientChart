@@ -91,7 +91,7 @@ const AutomationRealTimeChart = () => {
           setDayCounter(dayCounter + 1);
           setAutomationData(() => burndownData.slice(0, dayCounter))
 
-        }, 250)
+        }, 100)
       }
       if (dayCounter === 50) {
         setStartAnimation(false)
@@ -145,15 +145,16 @@ const AutomationRealTimeChart = () => {
           />
         </div>
         <div className="text-container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veritatis magnam cupiditate quasi quis et! Inventore exercitationem itaque unde, laudantium excepturi maxime quas magni eos, minima dolor praesentium! Voluptatibus, quos.</p>
           {text && <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis vitae expedita et perferendis molestias possimus, doloribus quae quo enim! Nulla rem ut maxime libero reiciendis? Iste consequuntur aliquid dicta dolores!</p>}
-          <div className="button-start">
+          {!text && <div className="button-start">
             <Button
               onClick={() => setStartAnimation(!startAnimation)}
               variant="contained"
               color="secondary">{startAnimation ? "Stop" : "Start"}
             </Button>
 
-          </div>
+          </div>}
         </div>
       </div>
     </div >
