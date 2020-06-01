@@ -28,8 +28,8 @@ const App = () => {
 
       <div className={prefersDark ? 'dark' : 'light'}>
         {/* <Header logoImage={logo} textImage={brand} /> */}
-        <Header textImage={hsbc} />
-        <Dashboard />
+        {/* <Header textImage={hsbc} /> */}
+        <Dashboard textImage={hsbc} />
 
 
       </div >

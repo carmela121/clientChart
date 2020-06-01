@@ -4,20 +4,20 @@ import ClientDataChart from './ClientDataChart'
 
 const Chart = (props) => {
   const clientData = [
-    {
-      "year": "2016",
-      "onboardedBRs": 209580,
-      "offboardedBRs": 54587,
-      "onboardedFiles": 99999,
-      "offboardedFiles": 3710
-    },
-    {
-      "year": "2017",
-      "onboardedBRs": 208784,
-      "offboardedBRs": 85594,
-      "onboardedFiles": 55546,
-      "offboardedFiles": 17207
-    },
+    // {
+    //   "year": "2016",
+    //   "onboardedBRs": 209580,
+    //   "offboardedBRs": 54587,
+    //   "onboardedFiles": 99999,
+    //   "offboardedFiles": 3710
+    // },
+    // {
+    //   "year": "2017",
+    //   "onboardedBRs": 208784,
+    //   "offboardedBRs": 85594,
+    //   "onboardedFiles": 55546,
+    //   "offboardedFiles": 17207
+    // },
     {
       "year": "2018",
       "onboardedBRs": 126741,
@@ -42,7 +42,7 @@ const Chart = (props) => {
   ]
 
   const [activeQuery, setActiveQuery] = useState('2020');
-  const [typeQuery, setTypeQuery] = useState('BRData');
+  const [typeQuery, setTypeQuery] = useState('FileData');
   const [data, setData] = useState([]);
   const [clientDataComparison, setDataComparison] = useState([]);
   const [loading, setLoading] = useState(true);

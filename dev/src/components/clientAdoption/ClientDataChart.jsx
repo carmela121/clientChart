@@ -31,14 +31,14 @@ const ClientDataChart = (props) => {
       return chartDataConfig
     }
     if (props.activeQuery !== "2018/2019" && props.typeQuery === "FileData") {
-      setXLabel("Number of Files")
+      setXLabel("Number of Client Files")
 
       const { onboardedFiles, offboardedFiles } = props.data;
 
       const dataStructure = {
 
-        "Onboarded Files": onboardedFiles,
-        "Offboarded Files": offboardedFiles,
+        "Dormant Clients": onboardedFiles,
+        "Active Clients": offboardedFiles,
       };
 
       const chartDataConfig = {
@@ -59,7 +59,7 @@ const ClientDataChart = (props) => {
     if (props.activeQuery === "2018/2019" && props.typeQuery === "BRData") {
       setXLabel("Number of BRs")
       const chartDataConfigComparison = {
-        labels: [props.dataComparison[2].year, props.dataComparison[3].year],
+        labels: [props.dataComparison[0].year, props.dataComparison[1].year],
         datasets: [
           {
             label: "Onboarded BRs",
@@ -86,27 +86,27 @@ const ClientDataChart = (props) => {
       return chartDataConfigComparison
     }
     if (props.activeQuery === "2018/2019" && props.typeQuery === "FileData") {
-      setXLabel("Number of Files")
+      setXLabel("Number of Client Files")
       const chartDataConfigComparison = {
-        labels: [props.dataComparison[2].year, props.dataComparison[3].year],
+        labels: [props.dataComparison[0].year, props.dataComparison[1].year],
         datasets: [
           {
-            label: "Onboarded Files",
+            label: "Dormant Clients",
             backgroundColor: "rgba(120, 139, 191, 0.3)",
             borderColor: "rgba(120, 139, 191,1)",
             borderWidth: 1,
             hoverBackgroundColor: "rgba(120, 139, 191,1)",
             hoverBorderColor: "rgba(120, 139, 191,1)",
-            data: [props.dataComparison[2].onboardedFiles, props.dataComparison[3].onboardedFiles]
+            data: [props.dataComparison[0].onboardedFiles, props.dataComparison[1].onboardedFiles]
           },
           {
-            label: "Offboarded Files",
+            label: "Active Clients",
             backgroundColor: "rgba(255, 204, 255, 0.3)",
             borderColor: "rgba(255, 204, 255,1)",
             borderWidth: 1,
             hoverBackgroundColor: "rgba(255, 204, 255,1)",
             hoverBorderColor: "rgba(255, 204, 255,1)",
-            data: [props.dataComparison[2].offboardedFiles, props.dataComparison[3].offboardedFiles]
+            data: [props.dataComparison[0].offboardedFiles, props.dataComparison[1].offboardedFiles]
           },
 
         ],
@@ -125,10 +125,10 @@ const ClientDataChart = (props) => {
 
   return (
 
-    <div style={{ textAlign: "center", padding: "40px" }}>
-      <h1>Client Adoption and Offboarding</h1>
+    <div style={{ textAlign: "center" }}>
+      <h1>Identifying active versus dormant clients</h1>
       <div>
-        <Select
+        {/* <Select
           style={{ width: "100px", textAlign: "center", marginBottom: "40px", marginRight: "20px" }}
           labelId="demo-simple-select-label"
           id="demo-simple-select"
@@ -139,7 +139,8 @@ const ClientDataChart = (props) => {
           <MenuItem value={"BRData"}>BR Data</MenuItem>
           <MenuItem value={"FileData"}>File Data</MenuItem>
 
-        </Select>
+        </Select> */}
+        <label style={{ marginRight: "20px" }}>Year </label>
         <Select
           style={{ width: "100px", textAlign: "center", marginBottom: "40px" }}
           labelId="demo-simple-select-label"

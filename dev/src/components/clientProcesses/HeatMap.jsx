@@ -213,10 +213,10 @@ const HeatMap = (props) => {
   };
   return (
 
-    <div style={{ width: "60%", margin: "auto", padding: "40px" }} >
+    <div style={{ width: "60%", margin: "auto" }} >
 
       <div className="mixed-chart" style={{ margin: "auto" }}>
-        <h1>Offboarding Activities</h1>
+        <h1>Offboarding activities</h1>
         <Select
           style={{ width: "100px", textAlign: "center", marginBottom: "40px", marginRight: "20px" }}
           labelId="demo-simple-select-label"
