@@ -8,7 +8,7 @@ const SystemClosureTable = (props) => {
 
   const [state, setState] = React.useState({
     columns: [{
-      title: "Accounts", field: "# Accounts"
+      title: "Accounts", field: "# Accounts", defaultGroupSort: "desc", defaultSort: "desc"
     },
     {
       title: "System Name", field: "System Name"

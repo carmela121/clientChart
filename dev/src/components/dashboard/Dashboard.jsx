@@ -83,7 +83,7 @@ const Dashboard = (props) => {
           centered>
           <Tab label="Analysis" {...a11yProps(0)} />
           <Tab label="Insights" {...a11yProps(1)} />
-          <Tab label="Result" {...a11yProps(2)} />
+          <Tab label="Optimisation" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>

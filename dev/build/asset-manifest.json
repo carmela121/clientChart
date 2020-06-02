@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7e67d7f2.chunk.css",
+    "main.js": "/static/js/main.6905f194.chunk.js",
+    "main.js.map": "/static/js/main.6905f194.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.437d7157.js",
+    "runtime-main.js.map": "/static/js/runtime-main.437d7157.js.map",
+    "static/js/2.7cdb5ca3.chunk.js": "/static/js/2.7cdb5ca3.chunk.js",
+    "static/js/2.7cdb5ca3.chunk.js.map": "/static/js/2.7cdb5ca3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.373001ec20da7f2f91cf79ad73ef8311.js": "/precache-manifest.373001ec20da7f2f91cf79ad73ef8311.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7e67d7f2.chunk.css.map": "/static/css/main.7e67d7f2.chunk.css.map",
+    "static/js/2.7cdb5ca3.chunk.js.LICENSE.txt": "/static/js/2.7cdb5ca3.chunk.js.LICENSE.txt",
+    "static/media/HSBC_Logo_2018.png": "/static/media/HSBC_Logo_2018.a1e496a0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.437d7157.js",
+    "static/js/2.7cdb5ca3.chunk.js",
+    "static/css/main.7e67d7f2.chunk.css",
+    "static/js/main.6905f194.chunk.js"
+  ]
+}

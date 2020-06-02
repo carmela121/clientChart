@@ -1,5 +1,6 @@
 .container {
-  margin: auto 40px;
+  margin: auto;
+  width: 75%;
 
 }
 .row {
@@ -8,16 +9,51 @@
   margin-top: 40px;
 }
 .text-container {
-  width: 30%;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 25%;
+  text-align: left;
 }
 .chart-container {
-  width: 100%;
+  width: 80%;
+  position: relative;
+  display: block;
 }
 .button-start {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
 
+input{
+
+  width: 40px;
+  margin-bottom: 8px;
+}
+
+label{
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+h5 {
+  margin-bottom: 0px;
+}
+.labels {
+  list-style: square;
+  padding: 0;
+  margin: 0;
+}
+.labels li {
+  display: inline-flex;
+
+}
+
+.labels p {
+  font-size: 12px;
+}
+
+.systems li {
+  display: block;
+}

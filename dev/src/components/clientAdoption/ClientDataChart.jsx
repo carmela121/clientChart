@@ -126,7 +126,7 @@ const ClientDataChart = (props) => {
   return (
 
     <div style={{ textAlign: "center" }}>
-      <h1>Identifying active versus dormant clients</h1>
+      <h1>Identifying Active vs Dormant Clients</h1>
       <div>
         {/* <Select
           style={{ width: "100px", textAlign: "center", marginBottom: "40px", marginRight: "20px" }}
@@ -167,7 +167,7 @@ const ClientDataChart = (props) => {
                 },
                 scaleLabel: {
                   display: true,
-                  fontSize: 16,
+                  fontSize: 14,
                   labelString: Xlabel,
                 }
               }]
