@@ -157,7 +157,7 @@ const AutomationRealTimeChart = (props) => {
         <div className="text-container">
           {!text && <div>
             <h3>Monte Carlo Simulation</h3>
-            <h5>Using the business parameters below and a given budget, we simulate different automation strategies to obtain the optimal state</h5>
+            <p style={{ fontSize: "12px" }}>Using the business parameters below and a given budget, we simulate different automation strategies to obtain the optimal business state</p>
             <h5>Parameters:</h5>
             {labels.map((item) => (
               <ul className="labels">
