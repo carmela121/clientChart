@@ -3,12 +3,12 @@ import MaterialTable from "material-table";
 import { Dialog, Toolbar, IconButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 
-
+import "./table.css";
 const SystemClosureTable = (props) => {
 
   const [state, setState] = React.useState({
     columns: [{
-      title: "Accounts", field: "# Accounts", defaultGroupSort: "desc", defaultSort: "desc"
+      title: "Accounts", field: "# Accounts", defaultSort: "desc"
     },
     {
       title: "System Name", field: "System Name"
@@ -43,7 +43,8 @@ const SystemClosureTable = (props) => {
                 headerStyle: {
                   backgroundColor: '#01579b',
                   color: '#FFF',
-                  fontWeight: "bold"
+                  fontWeight: "bold",
+
                 },
                 exportButton: true,
                 exportAllData: true,
@@ -55,7 +56,7 @@ const SystemClosureTable = (props) => {
           </div>}
         {props.paChecks &&
           <div style={{ width: "500px", textAlign: "center" }}>
-            <h2>P & A Checks for {props.region}</h2>
+            <h2>P &amp; A Checks for {props.region}</h2>
             <MaterialTable
               title="Export"
               columns={state.columns}

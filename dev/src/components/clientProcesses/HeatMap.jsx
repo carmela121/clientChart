@@ -53,7 +53,6 @@ const HeatMap = (props) => {
         mouseMove: (event, chartContext, config) => {
           let el = event.target;
           let range = el.getAttribute("data:default-text");
-          console.log(range)
           if (range === "0-1000") {
             setRangeColour("#b30000");
           } else {
@@ -226,7 +225,7 @@ const HeatMap = (props) => {
 
         >
           <MenuItem value={"Closures"}>Closures</MenuItem>
-          <MenuItem value={"P & A checks"}>P & A checks</MenuItem>
+          <MenuItem value={"P & A checks"}>P &amp; A checks</MenuItem>
           <MenuItem value={"All"}>All</MenuItem>
 
 
